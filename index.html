@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="auther" content="Rohan Nikumbh">
+    <title>Rohan Nikumbh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+  
+<!-- Navigation bar -->
+<!-- <div class="sticky">
+    <ul>
+        <li><img id="headingimage" src="img2.png" alt="Rohan Nikumbh"></li>
+        <li id="MainHeading">Rohan Nikumbh</li> 
+    </ul>
+</div> -->
+
+<nav class="navbar" style="position: sticky;top: 7px;border-radius: 30px;margin-top: 7px;backdrop-filter: blur(15px);width: 100%;color: rgb(0, 0, 0);z-index: 1;background-color: rgba(255, 255, 255, 0.7);">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="z-index: 5; background-color: rgba(196, 196, 196, 0.5);border-radius: 23px;">
+          <span style="color: gray; background-color: black;" class="icon-bar"></span>
+          <span style="color: gray; background-color: black;" class="icon-bar"></span>
+          <span style="color: gray; background-color: black;" class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Portfolio</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#skilldiv">Skills</a></li>
+          <li><a href="#Resume">Resume</a></li>
+          <li><a href="#myfooter">Contact</a></li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  
+
+
+
+    
+<!-- About me section -->
+<p class="Heading">About me</p>
+<br>
+<div id="AboutMainDiv" style="font-size: 1vw;">
+
+    <div class="divfle">
+        <img src="Images/img2.png" id="AboutImage" alt="profile image">
+    </div>
+    <div class="divfle">
+        <button id="RohHeading" onclick="scalee()"><span style="color: red;">R</span>OHAN NIKUMBH</button>
+        <script>
+            function scalee(){
+                var scl = document.getElementById("AboutImage");
+                scl.style.transform = "scale(1.09)";
+
+                setTimeout(function () {
+                scl.style.transform = "scale(1)";
+                }, 1000);
+            }
+        </script>
+        <p class="Heading" style="z-index: 0;margin-top: 20px;padding-left: 10px;margin-bottom: 10px; font-family: Georgia;">Student at VIIT, Pune</p>
+        <p style="padding-left: 20px; color: rgb(0, 0, 0);font-size: 20px ; font-family: Georgia;"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Hi, my name is Rohan Kailas Nikumbh. I am currently persuing my B.Tech in the field of Information Technology from Vishwakarma Institute of Information Technology, Pune. I am a results-oriented individual with a strong work ethic. I am detail-oriented and always strive for perfection. I am also adaptable, and I am always willing to learn new things. I always try to give my best efforts to make a significant contribution to the team.
+    </div>
+<br>
+</div>
+    
+<!-- Skills Section -->
+<div id="skilldiv">
+    <br>
+    <p class="Heading" style="background-color: rgba(255, 255, 255, 0.5);backdrop-filter: blur(20px);border-radius: 15px;padding: 5px; padding-right: 20px; padding-left: 20px; margin: auto;border-style: ridge; width: fit-content;">Skills</p>
+    <div id="divin">
+        <p class="skill">VLSI</p>
+        <p class="skill">UML</p>
+        <p class="skill">Java</p>
+        <p class="skill">HTML</p>
+        <p class="skill">CSS</p>
+        <p class="skill">C++</p>
+        <p class="skill">C</p>
+        <p class="skill">Javascript</p>
+        <p class="skill">VHDL</p>
+        <p class="skill">Data Communication and Networking</p>
+        <p class="skill">OS</p>
+        <p class="skill">DBMS</p>
+        <p class="skill">TOC</p>
+        <p class="skill">Data Structures</p>
+        <p class="skill">EGR</p>
+        <p class="skill">Planner 5D</p>
+        <p class="skill">Systematicness</p>
+        <p class="skill">Empathy</p>
+    </div>
+    <br>
+</div>
+
+
+<br>
+<!-- Resume -->
+<div id="Resume"></div>
+<fieldset style="padding: 2%;">
+    <legend>Resume:</legend>
+    <img style="margin: auto; border-radius: 12px ;width: 99%;" src="Images/Resume.PNG" alt="Rohan Nikumbh's Resume">
+</fieldset>
+
+<form style="margin: 20px;" method="post">
+    
+    <label for="feedb">Please, give some feedback</label><br><br>
+    <textarea name="Feedback" id="feedb" style="text-align: center; padding: 12px;" rows="4" placeholder="Enter feedback here (Tell me about myself)"></textarea>
+    <br>
+    <button id="feedbSubmitButton" onclick="Thank(); return false;">Submit</button>
+
+    <p id="submitfeedb" style="text-align: center; text-shadow: 0 0 30px rgb(0, 0, 0); box-shadow: 0 0 50 black;"></p>
+    <script>
+        function Thank(){
+            document.getElementById("submitfeedb").innerHTML = "Thank you for your feedback...";
+        }
+    </script>
+</form>
+
+
+
+<footer id="myfooter">
+    <h2 style="padding: 30px 0px 10px 0px; color: rgb(255, 255, 255);font-family: segoe UI">Reach out to me:</h2>
+    
+    <p style="display: inline-block; padding: 0px 0px 20px 0px; margin: 0; color: aliceblue">
+        <img src="Images/location.png" alt="location:" style="width: 15px; display: inline-block"> Pune, Maharashtra</p>
+  
+        <div style="margin:auto; padding: 10px;">
+            <a class="foot" href="https://in.linkedin.com/in/rohan-nikumbh-989aa4244"><img class="footerimage" src="Images/linkedin.png" alt="Rohan Nikumbh's Linkedin profile"></a>
+            <a class="foot" href="mailto:rohannikumbh2793@gmail.com"><img class="footerimage" src="Images/gmail.png" alt="Gmail Rohan Nikumbh"></a>
+            <a class="foot" href="https://youtube.com/@rohannikumbh308"><img class="footerimage" src="Images/youtube.png" alt="Rohan Nikumbh's Youtube Channel"></a>
+            <a class="foot" href="https://www.instagram.com/rohannikumbh/"><img class="footerimage" src="Images/instagram.png" alt="Rohan Nikumbh's Instagram profile"></a>
+            <a class="foot" href="https://www.facebook.com/rohannikumbh27"><img class="footerimage" src="Images/facebook.png" alt="Rohan Nikumbh's Facebook profile"></a>
+            <br>
+            <br>
+            <p style="color: rgb(255, 255, 255); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Copyright &copy Rohan_Nikumbh 2023</p>
+            <br>
+            <br>
+        </div>
+</footer>
+</body>
+</html>
