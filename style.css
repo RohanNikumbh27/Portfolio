@@ -442,9 +442,11 @@ footer {
     border-radius: 26px;
     margin-top: 1px;
     color: bisque;
-    box-shadow: 0px 2px 4px #004cff;
+    box-shadow: 0px 0px 4px #004cff;
 }
 
-
+button.navbar-toggle:hover {
+    box-shadow: 0px 0px 7px #004cff;
+}
 
 
