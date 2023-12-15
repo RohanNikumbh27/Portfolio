@@ -436,13 +436,14 @@ footer {
 }
 
 
-.nav>li>a:focus, .nav>li>a:hover {
+nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;
-    background-color: #000000;
+    background: #000;
     border-radius: 26px;
     margin-top: 1px;
-    color: bisque;
-    box-shadow: 0px 0px 4px #004cff;
+    color: burlywood;
+    box-shadow: 0px 1px 4px #004cff;
+    animation: initial;
 }
 
 button.navbar-toggle:hover {
