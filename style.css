@@ -440,10 +440,10 @@ footer {
     text-decoration: none;
     background-color: #000000;
     border-radius: 26px;
-    margin: 1px;
+    margin-top: 1px;
     color: bisque;
+    box-shadow: 0px 2px 4px #004cff;
 }
-
 
 
 
