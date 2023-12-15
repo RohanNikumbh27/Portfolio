@@ -441,7 +441,7 @@ nav>li>a:focus, .nav>li>a:hover {
     background: #000;
     border-radius: 26px;
     margin-top: 1px;
-    color: burlywood;
+    color: black;
     box-shadow: 0px 1px 4px #004cff;
     animation: initial;
 }
